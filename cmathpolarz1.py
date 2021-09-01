@@ -12,7 +12,6 @@ import numpy
 import random
 import matplotlib.pyplot as plt
  
-# define una funcion para limpiar la terminal
 def cls():
     os.system('cls' if os.name=='nt' else 'clear')
     return
