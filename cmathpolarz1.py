@@ -52,8 +52,6 @@ def fn_math() :
     a_abs = math.fabs(b)
     print(" a_neg={}; a_abs={}".format(a_neg, a_abs) )
      
-    # declaracion de variable multiple en una linea; 
-    #   se asigna eñ valor en el orden de aparición
     n, k = 20, 2
      
     # factorial: 5! = 5 x 4 x 3 x 2 x 1
@@ -125,14 +123,12 @@ def fn_cmath() :
      
     print(" CTE_PI={} CTE_E={} n CTE_TAU={} CTE_INFJ={} CTE_NANJ={}".format(CTE_PI, CTE_E, CTE_TAU, CTE_INFJ, CTE_NANJ) )
      
-    # construye 3 números complejos
     z1 = complex(2.0, 3.0)
     z2 = 4.0 + 5.0j
     z3 = -6.2 -2.6j
     z4 = complex(-10, -9)
     print(z1, z2, z3, z4)
      
-    # agrega los complejos números a una lista
     print("n **********  Extrae la parte real e imaginaria de cada número complejo")
     listz_1 = [z1, z2, z3, z4]
     for z in listz_1 :
@@ -155,17 +151,12 @@ def fn_cmath() :
     print("list_int2", list_int2)
     # -------------------------------------------------------------------------
      
-    # genera una lista de números complejos utilizando las funciones 
-    # Python’s zip() function creates an iterator that will aggregate elements from two or more iterables.
     complex_numbers  = []
     for (n1, n2) in zip(list_int1, list_int2) :
         complex_numbers.append(complex(n1, n2))
     #end-for
      
-    # genera una lista de numeros reales obteniendo la parte real de cada complejo
-    list_x = [x.real for x in complex_numbers]
-     
-    # genera una lista de numeros reales obteniendo la imaginaria real de cada complejo
+    list_x = [x.real for x in complex_numbers]     
     list_y = [x.imag for x in complex_numbers]    
      
     # -------------------------------------------------------------------------    
@@ -184,12 +175,10 @@ def fn_cmath() :
     # genera el grafico de puntos    
     plt.scatter(list_x, list_y, color="blue")
      
-    # itera por cada numero complejo y agrega una etiqueta con el valor de "z"
     for z in complex_numbers :
         plt.text(z.real, z.imag, "{}".format(z), color="red")
     #end-for
      
-    # agrega un conjunto de lineas con origen en (0,0), representado cada complejo "z"
     for z in complex_numbers :
         plt.plot([0, z.real], [0, z.imag])
     #end-for
@@ -203,7 +192,6 @@ def fn_cmath() :
     ax.spines['right'].set_color('none')
     ax.spines['top'].set_color('none')    
      
-    # agrega la cuadricula y muestra el gráfico    
     plt.grid()
     plt.show()
     # -------------------------------------------------------------------------
@@ -234,8 +222,8 @@ def fn_cmath() :
      
     for z in complex_numbers:
         plt.polar([0, cmath.phase(z)], [0, abs(z)], marker="o")
-     
-    # agrega la cuadricula y establece mostrar cuadricula en True
+    #end-for
+    
     ax = plt.gca()
     ax.grid(True) # gca = get current axes
      
@@ -250,7 +238,6 @@ def fn_cmath() :
         ax.annotate("{}<{}".format(abs_z_round, angle_degre), xy=(angle, abs_z), color="red", xycoords="data")
     #end-for    
      
-    # genera una sección del grafico de acuerdo a los ángulos especificados
     ax.set_thetamin(0)
     ax.set_thetamax(360)
      
@@ -258,7 +245,6 @@ def fn_cmath() :
      
     return
  
-# main-function definition
 def main() :
     cls()
     fn_math()
