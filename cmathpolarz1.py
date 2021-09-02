@@ -28,7 +28,6 @@ def fn_math() :
      
     print(" CTE_PI={}; CTE_E={} n CTE_TAU={} CTE_INF={} CTE_NAN={}".format(CTE_PI, CTE_E, CTE_TAU, CTE_INF, CTE_NAN) )
      
-    # variables
     a = 123.321
     b = 789.543
      
@@ -138,7 +137,7 @@ def fn_cmath() :
     # -------------------------------------------------------------------------
     # genera 2 listas de números-reales aleatorios enteros 
     # -------------------------------------------------------------------------    
-    # forma 1, iterando un rango de 1 a n y utilizando random.randint(...)
+    # forma 1, utilizando random.randint(...)
     list_int1 = []
     for i in range(0, 10):
         random_integer = random.randint(-10, 10)
@@ -146,7 +145,7 @@ def fn_cmath() :
     #end-for
     print("nlist_int1", list_int1)
      
-    # utilizando random.sample(...)
+    # forma 2, utilizando random.sample(...)
     list_int2 = random.sample(range(-10, 10), 10)
     print("list_int2", list_int2)
     # -------------------------------------------------------------------------
