@@ -1,8 +1,7 @@
 # pythoncmathscriptz1
 A python script to graphically represent complex numbers
 
-
-Complex Numbers is a topic a ever wanted to write about, firstly because this is a subject (the Linear Algebra) which has applications practically in any Engineering field from signal processing, control theory, electromagnetism, dynamics, cartography and so on; secondly because of the mathematical capabilities of some programming languages like Python; so lets begin by supplying some definitions: 
+Complex Numbers is a topic I ever wanted to write about, firstly because this is a subject ─the Linear Algebra─ which has applications practically in any Engineering field from signal processing, control theory, electromagnetism, dynamics, cartography and so on; secondly because of the mathematical capabilities of some programming languages like Python to handle this matter; so lets start by supplying some definitions: 
 
 <<A vector is an object that has both a magnitude and a direction. Geometrically, we can picture a vector as a directed line segment, whose length is the magnitude of the vector and with an arrow indicating the direction. The direction of the vector is from its tail to its head. Two vectors are the same if they have the same magnitude and direction. This means that if we take a vector and translate it to a new position (without rotating it), then the vector we obtain at the end of this process is the same vector we had in the beginning.>> [mathinsight.org]
 
@@ -12,8 +11,8 @@ Complex Numbers is a topic a ever wanted to write about, firstly because this is
 
 <<The rules for adding and subtracting complex numbers, namely to add or subtract corresponding components, are exactly the same as the rules for adding and subtracting vectors. Complex numbers behave exactly like two dimensional vectors. Indeed real numbers are one dimensional vectors (on a line) and complex numbers are two dimensional vectors (in a plane).>> [nrich.maths.org/]
 
-Vectors have application on physics to represent quantities like displacement, velocity, acceleration, force, torque, angular movement, etc; while phasors are specifically used in Electrical Engineering to analyze alternating current (AC) circuits; but these concepts rely on the mathematics behind complex numbers.
+Vectors have application in physics to represent quantities like displacement, velocity, acceleration, force, torque, angular movement, etc; while phasors are specifically used in Electrical Engineering to analyze alternating current (AC) circuits; both of these concepts rely on the mathematics behind complex numbers.  
 
-There are many manners to represent complex numbers, here are some of them: rectangular form, exponential form, polar form. Even when there exists some Applications like Matlab, Wolfram, Maple, Mathcad, etc, Python is one of the languages that includes the complex numbers as part of the fundamental data-types.
+There exist different manners to represent complex numbers, here are some of them: rectangular form, exponential form, polar form. Even when there exists some software applications like Matlab, Wolfram, Maple, Mathcad, etc to handle numerical and symbolic computation, Python is one of the languages that includes the complex numbers as part of the fundamental data-types. 
 
-Below is a Python-Script I created to deal with math & cmath modules and to implement graphical representations of complex number in rectangular and polar forms, Anaconda is a free-opensource distribution of the Python and R languages; Spyder is a scientific environment (IDE) written in Python.
+Below is a Python script I created by using Python's math & cmath modules to implement graphical representations of complex numbers in rectangular and polar forms. Anaconda software ─open ecosystem for sourcing, building, and deploying data science and AI initiatives─ is a free open source distribution of the Python and R languages; Spyder is a scientific environment (IDE) written in Python.
